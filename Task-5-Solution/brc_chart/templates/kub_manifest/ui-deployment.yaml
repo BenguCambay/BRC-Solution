@@ -33,7 +33,7 @@ spec:
         - env:
             - name: REACT_APP_API_URL
               value: http://{{ .Values.DNS_NAME }}/car-rental/api/
-          image: {{ .Values.IMAGE_TAG_UI }}
+          image: {{ .Values.IMAGE_TAG_FE }}
           name: brc-frontend
           ports:
             - containerPort: 3000
